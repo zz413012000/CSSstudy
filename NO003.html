@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            background-color: #333;
+        }
+        .wrap{
+            width: 1200px;
+            margin: auto;
+            display: flex;
+        }
+        .item{
+            width: 378px;
+            border: 1px solid #aaa;            
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            background: #FFF;
+            text-align: center;
+            transition: .5s;
+        }
+        .item:hover{
+            transform:translateY(-50px);            
+        }
+        .item:hover{
+            background-image: linear-gradient(0deg,#FB8076 0%,#FEB85D 30%,#FEB85D 100%);
+        }
+        .item:hover .text:before{
+            border-left: 189px solid #FEB85D;
+            border-right: 189px solid #FEB85D;
+        }
+        .item .text{
+            padding:10px;
+            position: relative;
+        }
+        .item .text:before{
+            position: absolute;
+            top: -50px;
+            left: 0;
+            content:'';
+            width: 0;
+            height: 0;
+            border-top:50px solid transparent;
+            border-left: 189px solid #fff;
+            border-right: 189px solid #fff;
+
+        }
+        .item h2{
+            border-bottom: 1px solid #aaa;
+            padding-bottom: .4em;
+            margin-bottom: .4em;
+        }
+
+        img{
+            width: 100%;
+            /* vertical-align: middle; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="item">
+            <img src="https://picsum.photos/684/600?random=12" alt="">
+            <div class="text">
+                <h2>title</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium fugiat est, eveniet, reprehenderit cupiditate error deleniti id natus ex perferendis possimus voluptatem laboriosam, reiciendis officiis sapiente fugit aliquid saepe!</p>
+            </div>            
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/684/600?random=10" alt="">
+            <div class="text">
+                <h2>title</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium fugiat est, eveniet, reprehenderit cupiditate error deleniti id natus ex perferendis possimus voluptatem laboriosam, reiciendis officiis sapiente fugit aliquid saepe!</p>
+            </div>            
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/684/600?random=11" alt="">
+            <div class="text">
+                <h2>title</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium fugiat est, eveniet, reprehenderit cupiditate error deleniti id natus ex perferendis possimus voluptatem laboriosam, reiciendis officiis sapiente fugit aliquid saepe!</p>
+            </div>            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    background-color: #333;
+}
+.wrap{
+    display: flex;
+    margin:auto ;
+    justify-content: center;
+   
+}
+.item{
+    width: 378px;
+    margin: 10px;
+    border: 1px solid #aaa;
+    background: #fff;
+    transition: .4s;
+}
+.item:hover{
+    transform: translateY(-50px);
+    background-image: linear-gradient(0deg,#FB8076 0%,#FEB85D 30%,#FEB85D 100%);
+}
+.item img{
+    width: 100%;
+    height: auto;
+    vertical-align:middle;
+    
+}
+.text{
+    padding: 10px;
+    position: relative;
+}
+/* .item .text:before{
+            position: absolute;
+            top: -50px;
+            left: 0;
+            content:'';
+            width: 0;
+            height: 0;
+            border-top:50px solid transparent;
+            border-left: 189px solid #fff;
+            border-right: 189px solid #fff;
+} */
+
+.item .text::before{
+    position: absolute;
+    top: -50px;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent ;
+    border-right: 189px solid #fff;
+    border-left: 189px solid #fff;
+}
+.item:hover .text:before{
+    border-right: 189px solid #FEB85D;
+    border-left: 189px solid #FEB85D;
+    
+}
+h2{
+    border-bottom:1px solid #aaa;
+    padding-bottom: 10px;
+    text-align: center;
+}
+p{
+    padding: 5px;
+}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">
+            <img src="https://picsum.photos/684/600?random=12" alt="">
+            <div class="text">
+            <h2>title</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum excepturi illum in fugiat reprehenderit error blanditiis, saepe hic esse maxime laudantium earum cupiditate vitae assumenda sit nesciunt nulla impedit deserunt!</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/684/600?random=11" alt="">
+            <div class="text">
+            <h2>title</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum excepturi illum in fugiat reprehenderit error blanditiis, saepe hic esse maxime laudantium earum cupiditate vitae assumenda sit nesciunt nulla impedit deserunt!</p>
+        </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/684/600?random=10" alt="">
+            <div class="text"><h2>title</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum excepturi illum in fugiat reprehenderit error blanditiis, saepe hic esse maxime laudantium earum cupiditate vitae assumenda sit nesciunt nulla impedit deserunt!</p>
+        </div>
+            
+        </div>
+    </div>
+</body>
+</html>

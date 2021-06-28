@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <title>Document</title>
+    <style type="text/css">
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: #a00;
+        border-radius: 50%;
+    }
+    .box1{
+        width: 200px;
+        height: 200px;
+        background-color: #a00;
+        border-radius: 50%;
+        /* animation:動畫名稱 播放時間 延遲執行的時間 速度 次數 方向 填充模式 撥放狀態; */
+        animation: amos 1s 1.5s infinite alternate;
+
+    }
+    @keyframes amos{
+          0%{border-radius: 50%;}
+        100%{border-radius: 0%;}        
+    }
+    </style>
+    <style></style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+</html>
