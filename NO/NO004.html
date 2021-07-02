@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;700;900&display=swap" rel="stylesheet"> -->
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;700;900&display=swap');
+        *{
+            margin: 0;padding: 0;list-style:none;
+        }
+        body{
+            padding: 100px 0;
+            background: linear-gradient(20deg,#3d5493,#1aa2a0)
+             fixed center center / 100% 100%;
+        }                   /*     width height       */
+        .wrap{
+            margin: auto;
+            width: 1200px;
+        }
+        .item{
+            display:flex;
+            align-items: center;
+            margin-bottom: 70px;
+            font-family: 'Noto Sans TC', sans-serif;
+            /* background-color: #ccc; */
+        }
+        .item h2{font-weight: 900;}
+        .item p{font-weight: 300;}
+        .item .pic{
+            width: 55%;
+            flex-shrink:0;
+        }
+        .item .pic img{
+            width: 100%;
+            vertical-align:middle; /*將圖片置中，處理下面留白*/
+        }
+        .item .text{
+            width: 55%;
+            flex-shrink:0;
+            /* background-color: rgb(255, 170, 136); */
+            padding: 50px 30px;
+            box-sizing:border-box; /*超出去就用手動算寬度，或者box-sizing*/
+            position:relative;
+            z-index:1;
+        }
+        .item >:first-child{
+            margin-right: -10%;
+        }
+        .item:nth-child(1) .text{
+            background-color: rgb(240, 174, 193,.8);
+        }
+        .item:nth-child(2) .text{
+            background-color: rgb(42, 253, 208,.8);
+        }
+        .item:nth-child(3) .text{
+            background-color: rgb(254, 201, 121,.8);
+        }
+        .item:nth-child(4) .text{
+            background-color: rgb(149, 219, 214,.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">
+            <div class="pic">
+                <img 
+                src="https://picsum.photos/600/350?random=10" alt="">
+            </div>
+            <div class="text">
+                <h2>小孩都可以學會的切版</h2>
+                <p>記憶力只有三秒也可以切出版。真的是真的沒有騙你。記憶力只有三秒也可以切出版。真的是真的沒有騙你。記憶力只有三秒也可以切出版。真的是真的沒有騙你。</p>
+            </div>
+        </div>        
+        <div class="item">
+            <div class="text">
+                <h2>我的記憶力只有三秒</h2>
+                <p>記憶力只有三秒也可以切出版。真的是真的沒有騙你。記憶力只有三秒也可以切出版。真的是真的沒有騙你。記憶力只有三秒也可以切出版。真的是真的沒有騙你。</p>
+            </div>
+            <div class="pic">
+                <img 
+                src="https://picsum.photos/600/350?random=11" alt="">
+            </div>
+        </div>        
+        <div class="item">
+            <div class="pic">
+                <img 
+                src="https://picsum.photos/600/350?random=1.2" alt="">
+            </div>
+            <div class="text">
+                <h2>我的記憶力只有四秒</h2>
+                <p>記憶力只有四秒也可以切出版。真的是真的沒有騙你。記憶力只有四秒也可以切出版。真的是真的沒有騙你。記憶力只有四秒也可以切出版。真的是真的沒有騙你。</p>
+            </div>
+        </div>        
+        <div class="item">
+            <div class="text">
+                <h2>我的記憶力只有五秒</h2>
+                <p>記憶力只有五秒也可以切出版。真的是真的沒有騙你。記憶力只有五秒也可以切出版。真的是真的沒有騙你。記憶力只有五秒也可以切出版。真的是真的沒有騙你。</p>
+            </div>
+            <div class="pic">
+                <img 
+                src="https://picsum.photos/600/350?random=13" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
