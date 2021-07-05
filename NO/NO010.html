@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+        *{
+            margin: 0;padding: 0;list-style:none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        body{
+            background: #ccc;
+        }
+        .wrap{
+            width: 100%;
+            margin:auto;
+            overflow:hidden;
+        }
+        .item{
+            float: left;
+            position:relative;
+        }
+        .item img{
+            width: 100%;
+            vertical-align:middle;
+        }
+        .item:first-child{
+            width: 50%;
+        }
+        .item:first-child ~ .item{
+            width: 25%;
+        }
+        .item .text{
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+            text-align:center;
+            color: #fff;
+            box-sizing:border-box;
+            background-color:rgba(0,0,0,.6);
+            display:flex;
+            /* display: none; */
+            opacity: 0;
+            flex-direction: column;
+            justify-content: center;
+            transform:scale(0);
+            transition:.4s;
+        }
+        .item:hover .text{
+            /* display: flex; */
+            transform:scale(1);
+            opacity: 1;
+        }
+        .item h3{
+            margin-bottom: 0.4em;
+        }
+        .item p{
+            font-weight: 100;
+            line-height:1.7;
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="item">
+        <img src="https://picsum.photos/500/500?random=10" alt="">
+        <div class="text">
+            <h3>小雞都懂得CSS</h3>
+            <p>簡單簡單。真的很簡單一下子就可以學。很簡單的優。</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="https://picsum.photos/500/500?random=20" alt="">
+        <div class="text">
+            <h3>小雞都懂得CSS</h3>
+            <p>簡單簡單。真的很簡單一下子就可以學。很簡單的優。</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="https://picsum.photos/500/500?random=30" alt="">
+        <div class="text">
+            <h3>小雞都懂得CSS</h3>
+            <p>簡單簡單。真的很簡單一下子就可以學。很簡單的優。</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="https://picsum.photos/500/500?random=40" alt="">
+        <div class="text">
+            <h3>小雞都懂得CSS</h3>
+            <p>簡單簡單。真的很簡單一下子就可以學。很簡單的優。</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="https://picsum.photos/500/500?random=50" alt="">
+        <div class="text">
+            <h3>小雞都懂得CSS</h3>
+            <p>簡單簡單。真的很簡單一下子就可以學。很簡單的優。</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
