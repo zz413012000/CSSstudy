@@ -6,25 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
         *{
-            
+            margin: 0;padding: 0;list-style:none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .banner{
+            /* width: 960px; */
+            height:700px;            
+            background:url("/IMAG7416.jpg") center top /cover;
+            /* margin-bottom: 400px; */
+        }
+        .sec{
+            position: relative;
+        }
+        .sec .container{
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            padding: 100px 0;
+            position: relative;
+            z-index: 2;
+        }
+        .sec .item{
+            width: 570px;
+            margin: 0 15px;
+        }
+        .sec .item h2{
+            margin-bottom: 1.3em;
+        }
+        .sec .item p{
+            line-height: 1.7;
+            margin-bottom: 1.6em;
+        }
+        .sec::after{
+            content:"";
+            display: block;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: rgba(255, 255, 255, 0.466);
+            top: 0;
+            left: 50%;
+            transform:translateX(-30%) translateY(-50%);
+            border-radius:50%;
+            box-shadow:178px 0px 0px -30px rgba(255, 255, 255, 0.466),
+                       327px 34px 0px 20px rgba(255, 255, 255, 0.466), 
+                       480px 9px 0px 60px rgba(255, 255, 255, 0.466),
+                       /* 690px 71px 0 600px #fff, */
+                       /* 880px 0 0 89px #fff, */
+                       -178px 0px 0px -30px rgba(255, 255, 255, 0.466),
+                       -327px 34px 0px 20px rgba(255, 255, 255, 0.466), 
+                       -480px 9px 0px 60px rgba(255, 255, 255, 0.466),
+                       /* -690px 71px 0 600px #fff, */
+                       /* -880px 0 0 89px #fff, */
+                       /* -1100px 50px 0 89px #fff, */
+
+                       178px -30px 0px -30px rgba(255, 255, 255, 0.466);
+        }
+        .sec::before{
+            content:"";
+            position: absolute;
+            width: 100%;
+            height: 200px;
+            background:rgba(252, 233, 244, 0.671);
+            z-index:1;
+            top: 0;
+            left: 0;
         }
     </style>
 </head>
 <body>
-<div class="banner">
-    <div class="sec">
-        <div class="container">
-            <div class="item">
-                <h2>小雞宣傳部</h2>
-                <p>以下是小雞軍事機密，需要成為小雞會員才能觀看。以下是小雞軍事機密，需要成為小雞會員才能觀看。以下是小雞軍事機密，需要成為小雞會員才能觀看。</p>
-                <p>以下是小雞軍事機密，需要成為小雞會員才能觀看。以下是小雞軍事機密，需要成為小雞會員才能觀看。以下是小雞軍事機密，需要成為小雞會員才能觀看。</p>
-            </div>
-            <div class="item">
-                <h2>小雞秘密調查部隊</h2>
-                <p>以下是小雞軍事機密，需要成為小雞會員才能觀看。以下是小雞軍事機密，需要成為小雞會員才能觀看。以下是小雞軍事機密，需要成為小雞會員才能觀看。</p>
-                <p>以下是小雞軍事機密，需要成為小雞會員才能觀看。以下是小雞軍事機密，需要成為小雞會員才能觀看。以下是小雞軍事機密，需要成為小雞會員才能觀看。</p>
-            </div>
+<div class="banner"></div>
+<div class="sec">
+    <div class="container">
+        <div class="item">
+            <h2>小雞宣傳部</h2>
+            <p>以下是小雞軍事機密，需要成為小雞會員才能觀看。以下是小雞軍事機密，需要成為小雞會員才能觀看。以下是小雞軍事機密，需要成為小雞會員才能觀看。</p>
+            <p>以下是小雞軍事機密，需要成為小雞會員才能觀看。以下是小雞軍事機密，需要成為小雞會員才能觀看。以下是小雞軍事機密，需要成為小雞會員才能觀看。</p>
+        </div>
+        <div class="item">
+            <h2>小雞秘密調查部隊</h2>
+            <p>以下是小雞軍事機密，需要成為小雞會員才能觀看。以下是小雞軍事機密，需要成為小雞會員才能觀看。以下是小雞軍事機密，需要成為小雞會員才能觀看。</p>
+            <p>以下是小雞軍事機密，需要成為小雞會員才能觀看。以下是小雞軍事機密，需要成為小雞會員才能觀看。以下是小雞軍事機密，需要成為小雞會員才能觀看。</p>
         </div>
     </div>
 </div>
