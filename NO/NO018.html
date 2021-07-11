@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+        *{
+            margin: 0;padding: 0;list-style:none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        html,body{
+            height: 100%;
+        }
+        body{
+            display:flex;
+            background-color: #d3effb;
+        }
+        .dialogue{
+            margin: auto;
+            width: 400px;
+            padding: 20px;
+            box-shadow:0 0 10px #3e92cc;
+            background-color: #f4f5f7;
+        }
+        .user{
+            display: flex;
+            margin-bottom: 20px;
+            align-items: flex-start;/*預設高度會自動伸縮至滿版，所以用 flex-start 讓元素向上頂*/
+        }
+        .user .avatar{
+            width: 60px;
+            flex-shrink: 0; /*關閉flex的自動伸縮*/
+        }
+        .local{
+            justify-content: flex-end;
+        }
+        .user .pic{
+            border-radius:50%;
+            border:1px solid #000;
+            overflow: hidden;
+        }
+        .user .pic img{
+            width: 100%;
+            height: 58px;
+            vertical-align:middle
+        }
+        .user .txt{
+            background-color: #aaa;
+            padding: 16px;
+            border-radius:5px;
+            position: relative;
+        }
+        .remote .txt{
+            margin-left: 20px;
+            margin-right: 80px;
+            background-color: #fff;
+        }
+        .local .txt{
+            margin-left: 80px;
+            margin-right: 20px;
+            order: -1;
+            background-color: #3e92cc;
+            color: #fff;
+        }
+        .remote .txt::before,
+        .local .txt::before{
+            content:"";
+            position: absolute;
+            top: 10px;
+            border-top:15px solid transparent;
+            border-bottom: 15px solid transparent;
+        }
+        .local .txt::before{
+            border-left: 15px solid #3e92cc;
+            right: -15px;
+        }
+        .remote .txt::before{
+            border-right: 15px solid #fff;
+            left: -15px;
+        }
+    </style>
+</head>
+<body>
+<div class="dialogue">
+    <div class="user remote">
+        <div class="avatar">
+            <div class="pic">
+                <img src="/IMAG7416.jpg" alt="">
+            </div>
+            <div class="name">Alvee</div>
+        </div>
+        <div class="txt">
+            拼圖拼不出來捏QQ
+        </div>
+    </div>
+    <div class="user local"> 
+        <div class="avatar">
+            <div class="pic">
+                <img src="/IMAG7417.jpg" alt="">
+            </div>
+            <div class="name">Amos</div>
+        </div>
+        <div class="txt">
+            沒關係我們有剪刀啊^^
+        </div>
+    </div>
+    <div class="user remote">
+        <div class="avatar">
+            <div class="pic">
+                <img src="/IMAG7416.jpg" alt="">
+            </div>
+            <div class="name">Alvee</div>
+        </div>
+        <div class="txt">
+            拼圖實在拼不出來
+        </div>
+    </div>
+    <div class="user local"> 
+        <div class="avatar">
+            <div class="pic">
+                <img src="/IMAG7417.jpg" alt="">
+            </div>
+            <div class="name">Amos</div>
+        </div>
+        <div class="txt">
+            沒關係剪刀有很多把啊^^
+        </div>
+    </div>
+    <div class="user local"> 
+        <div class="avatar">
+            <div class="pic">
+                <img src="/IMAG7417.jpg" alt="">
+            </div>
+            <div class="name">Amos</div>
+        </div>
+        <div class="txt">
+            你看我腋下都是
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
