@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;list-style:none;
+        }
+        .container{
+            width: 1200px;
+            margin: auto;
+            padding: 100px 0;
+        }
+        .container h1{
+            padding:0 15px;
+            font-size: 100px;
+            color:#aaa;
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .container h1::after{
+            content:"";
+            display: block;
+            height: 70px;
+            background-color: #eee;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            z-index:-1;
+        }
+        .container .txt{
+            padding: 15px;
+            column-count:2;
+            column-gap:30px;
+        }
+        .container .txt p{
+            margin-bottom: 40px;
+        }
+        .container .txt p:first-letter{
+            font-size: 40px;
+            float:left;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="container">
+        <h1>小雞烘焙隊伍</h1>
+        <div class="txt">
+            <p>
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam dicta mollitia saepe labore deleniti ducimus, ea beatae earum est id consectetur nemo, voluptates doloremque unde ad cumque aliquam maxime ullam.
+               Ullam incidunt modi quas! Culpa accusamus, ea commodi cupiditate a hic tenetur veniam adipisci tempora facere quisquam fugit quis. Ut reprehenderit labore earum tempora. Suscipit aliquam pariatur molestias eveniet. Placeat.
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam dicta mollitia saepe labore deleniti ducimus, ea beatae earum est id consectetur nemo, voluptates doloremque unde ad cumque aliquam maxime ullam.
+                Ullam incidunt modi quas! Culpa accusamus, ea commodi cupiditate a hic tenetur veniam adipisci tempora facere quisquam fugit quis. Ut reprehenderit labore earum tempora. Suscipit aliquam pariatur molestias eveniet. Placeat.
+            </p>
+            <p>
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam dicta mollitia saepe labore deleniti ducimus, ea beatae earum est id consectetur nemo, voluptates doloremque unde ad cumque aliquam maxime ullam.
+               Ullam incidunt modi quas! Culpa accusamus, ea commodi cupiditate a hic tenetur veniam adipisci tempora facere quisquam fugit quis. Ut reprehenderit labore earum tempora. Suscipit aliquam pariatur molestias eveniet. Placeat.
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

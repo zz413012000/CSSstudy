@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+        *{
+            margin: 0;padding: 0;list-style:none;font-family: 'Noto Sans TC', sans-serif;
+        }
+        .wrap{
+            margin: 100px 0;
+        }
+        .container{
+            width: 1200px;
+            margin:auto;
+        }
+        .container h1{
+            width: 400px;
+            height: 500px;
+            box-sizing:border-box;
+            padding: 15px;
+            /* background-color: #eee; */
+            float: right;
+            font-size: 90px;
+            color:#aaa;
+            position: relative;
+        }
+        .container h1::before{
+            content:"";
+            position:absolute;
+            z-index:-1;
+            width: 200px;
+            height: 200px;
+            border:30px solid #eee;
+            bottom: 0;
+        }
+        .container .txt{
+            column-count:2;
+            column-gap:30px;
+        }
+        .container p{
+            line-height: 1.6;
+            margin-bottom: 1.6em;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="container">
+        <h1>小雞後勤隊伍</h1>
+        <div class="txt">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, doloremque explicabo velit iusto voluptas sapiente nam cum distinctio, obcaecati quidem, deleniti sit nihil nulla voluptatem quos corporis ab at omnis.
+            Sit eaque enim obcaecati unde hic in nostrum ea officiis debitis neque porro dolore placeat asperiores ipsum nisi, numquam, eum cumque fugit doloribus, laboriosam consequuntur! Voluptatum nemo explicabo amet doloribus?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, doloremque explicabo velit iusto voluptas sapiente nam cum distinctio, obcaecati quidem, deleniti sit nihil nulla voluptatem quos corporis ab at omnis.
+            Sit eaque enim obcaecati unde hic in nostrum ea officiis debitis neque porro dolore placeat asperiores ipsum nisi, numquam, eum cumque fugit doloribus, laboriosam consequuntur! Voluptatum nemo explicabo amet doloribus?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, doloremque explicabo velit iusto voluptas sapiente nam cum distinctio, obcaecati quidem, deleniti sit nihil nulla voluptatem quos corporis ab at omnis.
+            Sit eaque enim obcaecati unde hic in nostrum ea officiis debitis neque porro dolore placeat asperiores ipsum nisi, numquam, eum cumque fugit doloribus, laboriosam consequuntur! Voluptatum nemo explicabo amet doloribus?</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

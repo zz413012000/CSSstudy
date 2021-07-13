@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;padding: 0;list-style:none;font-family: 'Noto Sans TC', sans-serif;
+}
+.wrap{
+    margin: 100px 0;
+}
+.container{
+    width: 1200px;
+    margin:auto;
+    display:flex ;
+    justify-content: flex-end;
+    position: relative;
+    box-shadow:0 0 20px #ccc;
+    overflow:hidden;
+}
+.container h1{
+    width: 100%;
+    flex-shrink:0;
+    box-sizing:border-box;
+    font-size: 180px;
+    padding-left: 30px;
+    color:#ddd;
+    position:absolute;
+    left: 0;
+    top: -60px;
+    line-height: 1.2em;
+    opacity:.6;
+}
+.container .txt{
+    width:600px;
+    flex-shrink:0;
+    box-sizing:border-box;
+    column-count:2;
+    column-gap:30px;
+    padding: 15px;
+    z-index:1;
+}
+.container .txt p{
+    margin-bottom: 1em;
+}
+.container .txt p:first-child:first-letter{
+    font-size: 60px;
+    float:left;
+    padding-right: 10px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+    <div class="container">
+        <h1>小雞<br/>探險隊<br/>小仔分部</h1>
+        <div class="txt">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, in quasi sint ab fugit aperiam deleniti quisquam at ducimus asperiores soluta, dolor nobis quos amet explicabo totam animi, consectetur nesciunt?
+            Doloribus adipisci debitis facilis minima dicta reiciendis ipsam, porro suscipit ut officia, nulla dolorum odit saepe eligendi accusantium delectus est quaerat necessitatibus voluptatem illum? Ipsa natus dolor voluptates mollitia aperiam!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, in quasi sint ab fugit aperiam deleniti quisquam at ducimus asperiores soluta, dolor nobis quos amet explicabo totam animi, consectetur nesciunt?
+            Doloribus adipisci debitis facilis minima dicta reiciendis ipsam, porro suscipit ut officia, nulla dolorum odit saepe eligendi accusantium delectus est quaerat necessitatibus voluptatem illum? Ipsa natus dolor voluptates mollitia aperiam!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, in quasi sint ab fugit aperiam deleniti quisquam at ducimus asperiores soluta, dolor nobis quos amet explicabo totam animi, consectetur nesciunt?
+            Doloribus adipisci debitis facilis minima dicta reiciendis ipsam, porro suscipit ut officia, nulla dolorum odit saepe eligendi accusantium delectus est quaerat necessitatibus voluptatem illum? Ipsa natus dolor voluptates mollitia aperiam!</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
